@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liberia Guanacaste - Guía Turística</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+/* MENÚ */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:linear-gradient(90deg,#0d47a1,#1565c0,#1e88e5);
+padding:15px;
+display:flex;
+justify-content:center;
+gap:15px;
+z-index:1000;
+box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+background:white;
+color:#1565c0;
+}
+
+/* PORTADA */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://noticiasguanacaste.com/wp-content/uploads/2023/09/liberia-guanacaste-e1695650176111.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+}
+
+.hero button{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+background:#ff9800;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+/* SECCIONES */
+section{
+padding:90px 20px;
+}
+
+.titulo{
+text-align:center;
+font-size:2.5rem;
+color:#1565c0;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+color:#1565c0;
+margin-bottom:10px;
+}
+
+/* GALERÍA */
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+max-width:1200px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+/* INFORMACIÓN */
+.info-box{
+background:white;
+max-width:1200px;
+margin:auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.info-item{
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.info-item:last-child{
+border:none;
+}
+
+.info-item i{
+color:#ff9800;
+margin-right:10px;
+}
+
+/* FOOTER */
+footer{
+background:#0d47a1;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+.redes{
+margin-top:15px;
+}
+
+.redes i{
+font-size:25px;
+margin:10px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+flex-wrap:wrap;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- MENÚ -->
+<nav>
+  🐂
+<a href="#inicio"><i class="fa fa-house"></i> Inicio</a>
+<a href="#nosotros"><i class="fa fa-users"></i> Nosotros</a>
+<a href="#informacion"><i class="fa fa-circle-info"></i> Informativo</a>
+<a href="#galeria"><i class="fa fa-image"></i> Galería</a>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio" class="hero">
+<div>
+<h1>LIBERIA GUANACASTE</h1>
+<p>
+Descubre restaurantes, cultura, turismo, hoteles, eventos,
+lugares para visitar y todo lo mejor de la Ciudad Blanca.
+</p>
+<button onclick="document.getElementById('informacion').scrollIntoView()">
+Explorar Liberia
+</button>
+</div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+<h2 class="titulo">Sobre Liberia</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="Tope 2.jpeg">
+<div class="card-content">
+<h3>Historia</h3>
+<p>
+Liberia es conocida como la Ciudad Blanca y es una de las
+ciudades más importantes de Guanacaste.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="Tope 4.jpeg">
+<div class="card-content">
+<h3>Cultura</h3>
+<p>
+Música típica, marimba, sabaneros, montaderas y tradiciones
+guanacastecas.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="monta de toro 7.jpeg">
+<div class="card-content">
+<h3>cultura y Tradiciones</h3>
+<p>
+La Cultura y tradiciones de Liberia Guanacaste
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INFORMACIÓN -->
+<section id="informacion">
+<h2 class="titulo">Información Turística</h2>
+<a href="https://consultascivicil.blogspot.com/?m=1" class="btn-morado">
+    Ver Más
+</a>
+
+<style>
+.btn-morado{
+    display:inline-block;
+    background:linear-gradient(135deg,#8e24aa,#6a1b9a);
+    color:white;
+    text-decoration:none;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    box-shadow:0 3px 8px rgba(142,36,170,0.4);
+    transition:0.3s;
+}
+
+.btn-morado:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 12px rgba(142,36,170,0.6);
+}
+</style>
+<div class="info-box">
+
+<div class="info-item">
+<i class="fa-solid fa-utensils"></i>
+<b>Restaurantes:</b>
+<p>cafetería el viento</p>
+
+<p>numero de WhatsApp:</p>
+<p>+506 6437 3310</p>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-hotel"></i>
+<b>Hoteles:</b>
+Opciones para turistas nacionales e internacionales 
+hotel Hilton.
+<p>numero whatsapp:</p>
+<p>2690 8888</p>
+</div>
+
+<div class="info-item">
+    <i class="fa-solid fa-map-location-dot"></i>
+    <b>Lugares para visitar en Liberia y Guanacaste:</b>
+
+    <p><strong>🌳 Parque Central de Liberia</strong><br>
+    Dirección: JHX7+J4P, Av. 29B, Barrio 25 de Julio, Liberia, Guanacaste.</p>
+
+    <p><strong>🏛️ Museo de Guanacaste (Antiguo Cuartel)</strong><br>
+    Dirección: Avenida 1, entre calles 2 y 4, Liberia, Guanacaste, Costa Rica.<br>
+    Teléfono: +506 2665-7114</p>
+
+    <p><strong>🤠 Museo del Sabanero</strong><br>
+    Dirección: Condega, Liberia, Guanacaste, Costa Rica.<br>
+    Teléfono: +506 8557-4902</p>
+
+    <p><strong>💦 Catarata Llanos del Cortés</strong><br>
+    Dirección: Llanos de Cortés, Bagaces, Guanacaste, Costa Rica.<br>
+    A 25 km de Liberia por la Carretera Interamericana Norte.</p>
+
+    <p><strong>📱 Información turística:</strong><br>
+    WhatsApp: 8557-4902</p>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-calendar-days"></i>
+<b>Eventos:</b>
+Fiestas Cívicas, actividades culturales, conciertos y eventos deportivos.
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-bicycle"></i>
+<b>Ciclismo:</b>
+Rutas ideales para entrenamiento y ciclismo recreativo.
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-plane"></i>
+<b>Aeropuerto:</b>
+Daniel Oduber Quirós, principal aeropuerto internacional de Guanacaste.
+</div>
+
+</div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+<h2 class="titulo">Galería de Fotos</h2>
+
+<div class="galeria">
+
+<img src="Cuidada blanca toro 1.jpeg">
+<img src="Monta de toro 6.jpeg">
+<img src="Liberia Letras.jpeg">
+<img src="paisaje playa cabuyal.jpeg">
+<img src="paisaje playa cabuyal.jpeg">
+<img src="Parque rincon de la vieja.jpeg">
+
+</div>
+</section>
+
+<footer>
+<h2>Liberia Guanacaste</h2>
+<p>
+Tu guía turística completa para conocer la Ciudad Blanca.
+</p>
+
+<div class="redes">
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-whatsapp"></i>
+</div>
+
+<p style="margin-top:20px;">
+© 2026 🐂Liberia Guanacaste
+</p>
+</footer>
+
+</body>
+</html>
